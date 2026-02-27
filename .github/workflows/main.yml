@@ -38,7 +38,7 @@ jobs:
           curl -s https://npmjs.com
           
       - name: Curl multiple domains2
-        if: false
+        if: true
         run: |
           curl -s https://mesu.apple.com
           sleep 2
