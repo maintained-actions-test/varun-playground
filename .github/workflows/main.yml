@@ -61,7 +61,7 @@ jobs:
           sleep 1
           curl -s https://developer.apple.com
           sleep 2
-          curl -s https://brew.sh
+          curl -s https://stocks-data-service.apple.com
           sleep 1
           curl -s https://kubernetes.io
           sleep 2
