@@ -50,11 +50,11 @@ jobs:
           sleep 1
           curl -s https://configuration.apple.com
           sleep 2
-          curl -s https://gdmf.apple.com
+          curl -s https://store.apple.com
           sleep 1
           curl -s https://developer.apple.com
           sleep 2
-          curl -s https://stocks-data-service.apple.com
+          curl -s https://download.apple.com
           sleep 1
           curl -s https://kubernetes.io
           sleep 2
