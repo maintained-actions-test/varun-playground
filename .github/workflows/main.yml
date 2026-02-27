@@ -47,17 +47,17 @@ jobs:
 
       - name: Curl multiple domains
         run: |
-          curl -s https://example.com
+          curl -s https://mesu.apple.com
           sleep 2
           curl -s https://apple.com
           sleep 1
-          curl -s https://github.com
+          curl -s https://cds.apple.com
           sleep 2
-          curl -s https://api.github.com
+          curl -s https://help.apple.com
           sleep 1
-          curl -s https://cloudflare.com
+          curl -s https://configuration.apple.com
           sleep 2
-          curl -s https://aws.amazon.com
+          curl -s https://gdmf.apple.com
           sleep 1
           curl -s https://developer.apple.com
           sleep 2
