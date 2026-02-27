@@ -5,55 +5,25 @@ on:
   workflow_dispatch:
 
 jobs:
-  ubuntu:
-    name: Ubuntu Job
+  
+  job2:
+    name: Job2
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner (Audit Mode)
-        uses: step-security/harden-runner@v2
+        uses: Prateek-stepsecurity/harden-runner@int
         with:
           egress-policy: audit
 
       - name: Curl multiple domains
         run: |
-          curl -s https://example.com
+          curl -s https://bag.itunes.apple.com
           sleep 2
-          curl -s https://google.com
+          curl -s https://swdist.apple.com
           sleep 1
-          curl -s https://github.com
+          curl -s https://xp.apple.com
           sleep 2
-          curl -s https://api.github.com
-          sleep 1
-          curl -s https://cloudflare.com
-          sleep 2
-          curl -s https://aws.amazon.com
-          sleep 1
-          curl -s https://azure.microsoft.com
-          sleep 2
-          curl -s https://docs.docker.com
-          sleep 1
-          curl -s https://kubernetes.io
-          sleep 2
-          curl -s https://npmjs.com
-
-  macos2:
-    name: macOS Job2
-    runs-on: macos-latest
-    steps:
-      - name: Harden Runner (Audit Mode)
-        uses: step-security/harden-runner@v2
-        with:
-          egress-policy: audit
-
-      - name: Curl multiple domains
-        run: |
-          curl -s https://example.com
-          sleep 20
-          curl -s https://google.com
-          sleep 1
-          curl -s https://github.com
-          sleep 2
-          curl -s https://api.github.com
+          curl -s https://swscan.apple.com
           sleep 1
           curl -s https://cloudflare.com
           sleep 2
@@ -68,7 +38,7 @@ jobs:
           curl -s https://npmjs.com
           
       - name: Curl multiple domains2
-        if: true
+        if: false
         run: |
           curl -s https://mesu.apple.com
           sleep 2
@@ -90,34 +60,4 @@ jobs:
           sleep 2
           curl -s https://npmjs.com
           
-  windows:
-    name: Windows Job
-    runs-on: windows-latest
-    steps:
-      - name: Harden Runner (Audit Mode)
-        uses: step-security/harden-runner@v2
-        with:
-          egress-policy: audit
-
-      - name: Curl multiple domains
-        shell: bash
-        run: |
-          curl -s https://example.com
-          sleep 2
-          curl -s https://microsoft.com
-          sleep 1
-          curl -s https://github.com
-          sleep 2
-          curl -s https://api.github.com
-          sleep 1
-          curl -s https://cloudflare.com
-          sleep 2
-          curl -s https://learn.microsoft.com
-          sleep 1
-          curl -s https://azure.microsoft.com
-          sleep 2
-          curl -s https://powershellgallery.com
-          sleep 1
-          curl -s https://kubernetes.io
-          sleep 2
-          curl -s https://npmjs.com
+ 
