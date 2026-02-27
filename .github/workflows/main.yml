@@ -7,7 +7,7 @@ on:
 jobs:
   
   job2:
-    name: Job2
+    name: Job3
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner (Audit Mode)
@@ -38,7 +38,7 @@ jobs:
           curl -s https://npmjs.com
           
       - name: Curl multiple domains2
-        if: true
+        if: false
         run: |
           curl -s https://mesu.apple.com
           sleep 2
